@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  box-sizing:border-box ;
+}
+
+body{
+  background-color: #ABD5FF;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 90px 20px 0;
+
+}
+
+.header{
+ background-color: #1E759E ;
+ height: 80px;
+ position:fixed;
+ width: 100%;
+ top: 0;
+ left: 0; 
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+
+}
+
+.navml{
+color:white;
+text-decoration: none;
+}
+
+.logo{
+font-size: 30px;
+font-weight: bold;
+padding: 0 40px;  
+line-height: 80px; 
+}
+
+.nav-menu{ 
+      display: flex;
+      margin-right: 40px;
+      list-style: none;
+}
+    
+.nmi{
+     font-size: 18px;
+     margin: 0 10px;
+     line-height: 80px;
+     text-transform: uppercase;
+     width: max-content;
+   } 
+   
+.nml{
+  padding: 8px 12px;
+  border-radius: 5px;
+
+}
+.nml:hover{
+     background-color: #BBBCBF;
+     transition: 1;
+}
+
+
+.toggle{
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+
+}
+.f{
+  width: 175px;
+  height: auto;
+  margin: 3em;
+}
+.main{
+  color: #fff;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+     font-family:" Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  
+}
+
+.mov{
+  animation: movimiento 2.5s linear infinite;
+}
+@keyframes movimiento{
+0%{
+  transform: translateX(0);
+}
+50%{
+  transform: translateX(30px);
+}
+100%{
+  transform: translateX(0);
+}
+}
+@media (max-width: 768px){
+  body{
+       background-color:#0D2680;
+       padding-top: 70px;
+  }
+  
+.header{
+ height: 60px;
+}
+
+.logo{
+font-size: 25px;
+padding: 0 20px;  
+line-height: 60px; 
+}
+
+.nav-menu{ 
+     flex-direction: column;
+     align-items:center;
+     margin-right: 20px;
+     background-color: #BBBCBF ;
+     position: fixed;
+     left: 0;
+     top: 60px;
+     width: 100%;
+     padding: 20px 0;
+     height: calc(100%-60px);
+     overflow: auto;
+     left: 100%;
+     transition: left 0.3s;
+}
+   
+.nmi{
+     
+    line-height: 70px;
+} 
+  
+.nml:hover,
+.nav-menu-linka{
+    background:none;
+    color:deepskyblue;
+}
+
+.toggle {
+ background-color: DodgerBlue;
+ border: none;
+ color: white;
+ padding: 12px 16px;
+ font-size: 16px;
+ cursor: pointer;
+ display: block;
+}
+.nav-menvi{
+  left:0;
+}
+  
+}
+
+                                                    
